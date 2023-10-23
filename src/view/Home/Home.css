@@ -1,0 +1,156 @@
+/* Home.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Adiciona estilos ao corpo e ao HTML para garantir altura total da tela */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    /* Evita scrolls desnecessários na página */
+}
+
+.home-container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    margin-right: 10px;
+    /* Ajuste a margem conforme necessário */
+}
+
+.title-container {
+    margin-top: -30px;
+}
+
+.logo img {
+    max-width: 70px;
+    /* Ajuste conforme necessário */
+}
+
+.icon-bell-container {
+    position: fixed;
+    top: 0; /* Ajuste conforme necessário */
+    right: 0; /* Alinha no lado direito */
+    padding: 20px; /* Adiciona algum espaçamento ao redor do ícone */
+    cursor: pointer;
+}
+
+.icon-bell {
+    width: 28px; /* Ajuste o tamanho conforme necessário */
+    height: 30px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Componente de Plantio */
+.planting-component {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    /* Ajuste para alinhar o texto à esquerda */
+}
+
+.plant-icon {
+    margin-right: 10px;
+    /* Espaçamento entre o ícone e o texto */
+}
+
+.plant-info {
+    line-height: 0.3;
+    /* Ajuste conforme necessário */
+    text-align: left;
+}
+
+/* Componentes de Clima (Temperatura, Umidade) */
+.climate-components {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Componente de Temperatura */
+.temperature-component {
+    width: 100%;
+    /* Ocupa 100% da largura do contêiner pai */
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.temperature-info {
+    line-height: 0.4;
+    /* Ajuste conforme necessário */
+    text-align: left;
+    /* Ajuste para alinhar o texto à esquerda */
+}
+
+/* Componente de Umidade */
+.humidity-component {
+    width: 100%;
+    /* Ocupa 100% da largura do contêiner pai */
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.humidity-info {
+    line-height: 0.4;
+    /* Ajuste conforme necessário */
+    text-align: left;
+    /* Ajuste para alinhar o texto à esquerda */
+}
+
+.update-info {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #6F6F6F;
+}
+
+.update-icon {
+    margin-right: 10px;
+    /* Ajuste conforme necessário para o espaçamento entre o ícone e o texto */
+}
+
+.update-icon img {
+    max-width: 13px;
+    /* Ajuste conforme necessário */
+}
+
+.pdf-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajuste conforme necessário para o espaçamento desejado */
+  }
+
+.loading-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

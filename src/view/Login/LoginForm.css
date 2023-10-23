@@ -1,0 +1,143 @@
+/* LoginForm.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Adiciona estilos ao corpo e ao HTML para garantir altura total da tela */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden; /* Evita scrolls desnecessários na página */
+}
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza na vertical */
+  align-items: center; /* Centraliza na horizontal */
+  height: 100vh; /* 100% da altura da tela */
+  max-width: 400px;
+  margin: auto;
+  margin-top: -50px; /* Desloca o container para cima */
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto; /* Adiciona scroll interno se o conteúdo for maior que a tela */
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+input {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 0.1px solid #000000;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  position: relative;
+  transform: scale(0.8); /* Ajuste o fator de escala conforme necessário */
+}
+
+.checkbox-group input:checked::before {
+  content: '\2714';
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-group input:checked {
+  background-color: #00c44b;
+  border-color: #00c44b;
+}
+
+.checkbox-group label {
+  margin-top: 5.5px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.terms-link {
+  color: #00c44b;
+  margin-left: 5px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button {
+  background-color: #00c44b;
+  color: #ffffff;
+  width: 307.511px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  width: 300px;
+}
+
+/* Adiciona o estilo para centralizar o overlay do modal */
+.modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
