@@ -5,6 +5,7 @@ import jsPDF from 'jspdf';
 import axios from 'axios';
 import './Home.css';
 
+
 const Home = () => {
     const navigate = useNavigate();
 
@@ -144,7 +145,7 @@ const Home = () => {
                 <div className="title-container">
                     <h2>Início</h2>
                 </div>
-                <div className="icon-bell-container">
+                <div className="icon-bell-container" onClick={() => navigate('/notifications')}>
                     <img src="/images/icon-sino.png" alt="Ícone" className="icon-bell" />
                 </div>
             </div>
