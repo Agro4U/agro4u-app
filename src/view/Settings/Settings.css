@@ -1,0 +1,59 @@
+.settings {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .settings-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .settings-header h1 {
+    font-size: 2rem;
+  }
+  
+  .settings-back {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .settings-main {
+    padding: 2rem;
+  }
+  
+  .settings-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .settings-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .settings-item a {
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .settings-footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-top: 1px solid #ccc;
+  }
+  
+  .settings-footer p {
+    font-size: 1rem;
+  }
+  

@@ -38,13 +38,26 @@ html {
 .icon-bell-container {
     position: fixed;
     top: 0; /* Ajuste conforme necessário */
-    right: 0; /* Alinha no lado direito */
+    right: 50px; /* Alinha no lado direito */
     padding: 20px; /* Adiciona algum espaçamento ao redor do ícone */
     cursor: pointer;
 }
 
 .icon-bell {
-    width: 28px; /* Ajuste o tamanho conforme necessário */
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: 30px; /* Ajuste o tamanho conforme necessário */
+}
+
+.icon-settings-container {
+    position: fixed;
+    top: 0; /* Ajuste conforme necessário */
+    right: 0; /* Alinha no lado direito */
+    padding: 20px; /* Adiciona algum espaçamento ao redor do ícone */
+    cursor: pointer;
+}
+
+.icon-settings {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
     height: 30px; /* Ajuste o tamanho conforme necessário */
 }
 
@@ -69,6 +82,10 @@ html {
     line-height: 0.3;
     /* Ajuste conforme necessário */
     text-align: left;
+}
+
+.icon-plant {
+    width: 60px;
 }
 
 /* Componentes de Clima (Temperatura, Umidade) */
@@ -100,6 +117,11 @@ html {
     /* Ajuste para alinhar o texto à esquerda */
 }
 
+.icon-thermometer {
+    width: 65px;
+    margin-left: 10px;
+}
+
 /* Componente de Umidade */
 .humidity-component {
     width: 100%;
@@ -121,6 +143,12 @@ html {
     /* Ajuste para alinhar o texto à esquerda */
 }
 
+
+.icon-drop {
+    width: 65px;
+    margin-left: 10px;
+}
+
 .update-info {
     display: flex;
     font-size: 13px;
@@ -135,9 +163,10 @@ html {
     /* Ajuste conforme necessário para o espaçamento entre o ícone e o texto */
 }
 
-.update-icon img {
-    max-width: 13px;
-    /* Ajuste conforme necessário */
+.icon-update-arrow {
+    max-width: 18px;
+    width: 16px;
+    margin-top: 5px;
 }
 
 .pdf-button-container {

@@ -146,13 +146,16 @@ const Home = () => {
                     <h2>Início</h2>
                 </div>
                 <div className="icon-bell-container" onClick={() => navigate('/notifications')}>
-                    <img src="/images/icon-sino.png" alt="Ícone" className="icon-bell" />
+                    <img src="/images/icon-bell.svg" alt="Ícone" className="icon-bell" />
+                </div>
+                <div className="icon-settings-container" onClick={() => navigate('/settings')}>
+                    <img src="/images/icon-settings.svg" alt="Ícone" className="icon-bell" />
                 </div>
             </div>
 
             <div className="planting-component">
                 <div className="plant-icon">
-                    <img src="/images/icon-planta-black.png" alt="Logo" />
+                    <img src="/images/icon-plant.svg" className="icon-plant" alt="Logo" />
                 </div>
                 <div className="plant-info">
                     <h2>Plantio de Alface</h2>
@@ -168,7 +171,7 @@ const Home = () => {
                     </div>
                     <div className="temperature-info">
                         <div className="temperature-icon">
-                            <img src="/images/icon-termometro.png" alt="Logo" />
+                            <img src="/images/icon-thermometer.svg" className="icon-thermometer" alt="Logo" />
                         </div>
                         <p>
                             <b>Ar </b>
@@ -187,7 +190,7 @@ const Home = () => {
                     </div>
                     <div className="humidity-info">
                         <div className="humidity-icon">
-                            <img src="/images/icon-gota.png" alt="Logo" />
+                            <img src="/images/icon-drop.svg" className="icon-drop" alt="Logo" />
                         </div>
                         <p>
                             <b>Ar </b>
@@ -209,7 +212,7 @@ const Home = () => {
 
             <div className="update-info">
                 <div className="update-icon">
-                    <img src="/images/icone-atualizado.png" alt="Ícone de atualização" />
+                    <img src="/images/icon-update-arrow.svg" className="icon-update-arrow" alt="Ícone de atualização" />
                 </div>
                 <p>Dados atualizados em {HR} {DY}</p>
             </div>
